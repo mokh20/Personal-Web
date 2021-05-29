@@ -1,0 +1,517 @@
+html {
+    font-size: 16px;
+    background-color: rgb(236, 236, 236);
+    direction: rtl;
+    font-family: iransans-light;
+    height: 100%;
+}
+
+* {
+    font-family: iransans-light;
+}
+
+body {
+    min-height: 100%;
+}
+
+a:link,
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.nav {
+    display: grid;
+    background-color: rgb(100, 100, 100);
+    grid-template-areas: "item-nav1  item-nav2  item-nav3  item-nav4  item-nav5";
+    justify-content: center;
+    box-shadow: 0px 7px 14px 0px rgb(100, 100, 100);
+}
+
+.nav a {
+    padding: .8rem;
+    display: grid;
+    font-family: iransans-medium;
+    font-size: .8rem;
+    text-align: center;
+}
+
+.line-bottom {
+    width: 68px;
+    height: 3px;
+    background-color: rgb(128, 0, 0);
+    transition: all .4s ease-in-out;
+}
+
+
+/**/
+
+.nav .nav-item1 {
+    grid-area: item-nav1;
+}
+
+.nav .nav-item2 {
+    grid-area: item-nav2;
+}
+
+.nav .nav-item3 {
+    grid-area: item-nav3;
+}
+
+.nav .nav-item4 {
+    grid-area: item-nav4;
+}
+
+.nav .nav-item5 {
+    grid-area: item-nav5;
+}
+
+.personal-pic {
+    background: no-repeat border-box 0 0 /cover url(../images/Personal-pic.png);
+    margin: auto;
+    max-width: 270px;
+    height: 250px;
+    display: grid;
+    justify-content: center;
+}
+
+
+/*                                                                            */
+
+.box-items-head {
+    display: grid;
+    grid-template-areas: " telegram whatsapp head-item-3 instagram phone";
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+
+/*                         */
+
+.box-items-head a {
+    position: relative;
+}
+
+.box-items-head a:hover>.line-top {
+    /* transition: all .1s ease-in-out; */
+    visibility: hidden;
+}
+
+.item-head:hover {
+    transition: all .4s ease-in-out;
+    color: rgb(36, 122, 138);
+}
+
+.fa-telegram {
+    grid-area: telegram;
+}
+
+.fa-whatsapp {
+    grid-area: whatsapp
+}
+
+.box-items-head .head-item-3 {
+    grid-area: head-item-3;
+}
+
+.fa-instagram {
+    grid-area: instagram
+}
+
+.fa-phone {
+    grid-area: phone
+}
+
+
+/*                          */
+
+.box-items-head h2 {
+    font-size: 1rem;
+    font-family: iransans-medium;
+    color: black;
+    margin: 0 .5rem;
+    display: grid;
+    align-items: center;
+}
+
+.item-head {
+    font-size: 1.3rem;
+    padding: .8rem;
+    margin: .1rem;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+
+.box-items-head a {
+    padding: .4rem;
+    padding-top: .1rem;
+}
+
+.line-top {
+    width: 46px;
+    height: 2px;
+    position: absolute;
+    top: 0;
+    background-color: brown;
+    margin: .1rem;
+}
+
+
+/*                                               */
+
+.aboutme {
+    border-top: 1px solid rgba(189, 189, 189, 0.6);
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+}
+
+.text-aboutme {
+    line-height: 2;
+    color: black;
+    width: 100%;
+    font-size: 1.1rem;
+    /* font-family: iransans-light; */
+}
+
+.text-aboutme p {
+    line-height: 2;
+}
+
+.text-aboutme h2 {
+    font-size: 2rem;
+    padding: 1rem;
+    font-family: iransans-medium;
+}
+
+.my-skill {
+    border-top: 1px solid rgba(189, 189, 189, 0.6);
+    border-bottom: 1px solid rgba(189, 189, 189, 0.6);
+    padding: 1rem;
+    color: black;
+    margin: 1rem;
+}
+
+.my-skill h2 {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 500;
+    font-family: iransans-medium;
+}
+
+.html-skill,
+.css-skill,
+.js-skill {
+    height: 3rem;
+    position: relative;
+    margin-top: .8rem;
+    z-index: 0;
+}
+
+.js-skill {
+    margin-bottom: 2rem;
+}
+
+.my-skill h3,
+.my-skill h4 {
+    position: absolute;
+    bottom: .8rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.html-skill .value-html {
+    width: 80%;
+    height: 0.3rem;
+    background-color: rgb(46, 144, 53);
+    bottom: 0;
+    position: absolute;
+}
+
+.html-skill h4 {
+    left: 20%;
+}
+
+.css-skill .value-css {
+    width: 60%;
+    height: 0.3rem;
+    background-color: rgb(46, 144, 53);
+    bottom: 0;
+    position: absolute;
+}
+
+.css-skill h4 {
+    left: 40%;
+}
+
+.js-skill .value-js {
+    width: 20%;
+    height: 0.3rem;
+    background-color: rgb(46, 144, 53);
+    bottom: 0;
+    position: absolute;
+}
+
+.js-skill h4 {
+    left: 80%;
+}
+
+.contact {
+    background-color: rgb(74, 39, 39, 55%);
+    margin: 5% auto 5% auto;
+    width: 90%;
+    border: 1px solid rgba(219, 219, 219, 0.6);
+    border-radius: 16px;
+    color: black;
+}
+
+.title-contact {
+    padding: .5rem;
+    padding-top: 1.5rem;
+    text-align: center;
+    margin: .5rem;
+    font-family: iransans-medium;
+    font-size: 1.5rem;
+}
+
+.container {
+    padding: .8rem;
+}
+
+input[type=text],
+input[type=email],
+textarea,
+button[type=submit] {
+    width: 100%;
+    padding: .8rem;
+    margin: 1rem 0;
+    display: inline-block;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: rgb(160, 28, 19);
+    font-size: .95rem;
+}
+
+button[type=submit] {
+    background-color: rgb(145, 10, 10);
+    color: white
+}
+
+input[type=text]:hover,
+input[type=email]:hover,
+textarea:hover,
+button[type=submit]:hover {
+    background-color: rgb(56, 34, 34);
+    color: white;
+}
+
+.CV {
+    border-bottom: 1px solid rgba(189, 189, 189, 0.6);
+    margin: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+.CV-container {
+    padding: 1rem;
+    display: grid;
+    justify-content: center;
+}
+
+.CV h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: black;
+    font-family: iransans-medium;
+}
+
+.CV-item {
+    background: border-box no-repeat 0 0/contain url(../images/CV.jpg);
+    max-width: 325px;
+    min-width: 300px;
+    height: 227px;
+    margin-bottom: -32px;
+    border-radius: 6px;
+}
+
+.CV-container .box-CV {
+    width: 100%;
+    height: 227px;
+    margin-bottom: 5rem;
+}
+
+.CV-container .box-CV b {
+    text-align: center;
+    display: grid;
+    padding: .5rem;
+    background-color: rgb(107, 6, 6);
+}
+
+footer {
+    background-color: rgb(100, 100, 100);
+    box-shadow: 0px -2px 14px 0px rgb(0, 0, 0);
+    color: rgb(255, 255, 255)
+}
+
+.footer-contact {
+    display: grid;
+    grid-template-areas: " telegram whatsapp instagram phone";
+    justify-content: center;
+}
+
+.item-footer {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: rgb(134, 26, 26);
+}
+
+.item-footer:hover {
+    color: white;
+}
+
+footer div {
+    padding: .7rem;
+    text-align: center;
+    font-size: .7rem;
+}
+
+footer div a {
+    background-color: black;
+    padding: .5rem;
+    margin: .1rem;
+    border-radius: 5px
+}
+
+footer div a:hover {
+    color: brown
+}
+
+@media screen and (min-width: 700px) {
+    .personal-pic {
+        max-width: 350px;
+        height: 350px;
+    }
+    .nav {
+        grid-template-areas: "item-nav1  item-nav2  item-nav3  item-nav4  item-nav5";
+        justify-content: flex-start;
+        padding-right: 4rem;
+    }
+    .nav a {
+        padding: 1.2rem;
+    }
+    .box-items-head h2 {
+        font-size: 2rem;
+        font-family: iransans-medium;
+        margin: 0 1rem;
+    }
+    .box-items-head a {
+        padding-top: 0;
+        padding: .4rem;
+    }
+    .item-head {
+        font-size: 1.5rem;
+        padding: 1.2rem;
+        margin: .2rem;
+    }
+    .line-top {
+        width: 62px;
+        height: 2px;
+        position: absolute;
+        top: 0;
+        background-color: brown;
+        margin: .2rem;
+    }
+    .personal-pic-aboutme {
+        background: no-repeat border-box 0 0 /cover url(../images/Personal-pic.png);
+        min-width: 190px;
+        max-height: 190px;
+        min-height: 180px;
+    }
+    .text-aboutme {
+        line-height: 1.5;
+        color: black;
+        padding: 1.5rem;
+    }
+    .text-aboutme h2 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    .contact {
+        width: 80%
+    }
+    .CV-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+    }
+    a:nth-child(2):hover~.line-bottom {
+        transform: translate(-75px);
+        transition: all .4s ease-in-out;
+    }
+    a:nth-child(3):hover~.line-bottom {
+        transform: translate(-160px);
+        transition: all .4s ease-in-out;
+    }
+    a:nth-child(4):hover~.line-bottom {
+        transform: translate(-248px);
+        transition: all .4s ease-in-out;
+    }
+    a:nth-child(5):hover~.line-bottom {
+        transform: translate(-330px);
+        transition: all .4s ease-in-out;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .personal-pic-aboutme {
+        background: no-repeat border-box 0 0 /cover url(../images/Personal-pic.png);
+        min-width: 227px;
+        max-height: 190px;
+        min-height: 240px;
+    }
+    .box-items-head h2 {
+        font-size: 2.8rem;
+        font-family: iransans-medium;
+    }
+    .item-head {
+        font-size: 2rem;
+        padding: 1.2rem;
+        margin: .4rem;
+    }
+    .line-top {
+        width: 70.4px;
+        height: 2px;
+        position: absolute;
+        top: 0;
+        background-color: brown;
+        margin: .4rem;
+    }
+    .text-aboutme {
+        line-height: 1.5;
+        color: black;
+        padding: 1.5rem;
+        width: 100%;
+    }
+    .contact {
+        width: 45%;
+    }
+    .CV-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .CV-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+}
